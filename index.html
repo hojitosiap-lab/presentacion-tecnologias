@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Tecnologías</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            text-align: center;
+            background: white;
+            margin-bottom: 2px;
+        }
+        
+        .slide:nth-child(even) {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #764ba2;
+        }
+        
+        h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+            color: #667eea;
+        }
+        
+        p, li {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin: 15px 0;
+            max-width: 900px;
+        }
+        
+        ul {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        li {
+            margin: 15px 0;
+            padding-left: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 10px;
+        }
+        
+        .date {
+            font-size: 1.2em;
+            color: #777;
+            margin-top: 20px;
+        }
+        
+        .tech-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 700px;
+        }
+        
+        .highlight {
+            color: #764ba2;
+            font-weight: bold;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 30px 0;
+        }
+        
+        .grid-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            font-size: 1em;
+            color: #888;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            h2 { font-size: 2em; }
+            p, li { font-size: 1.1em; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Portada -->
+    <div class="slide">
+        <h1>🚀 Presentación de Tecnologías</h1>
+        <p class="subtitle">Un Viaje por el Mundo de la Innovación Digital</p>
+        <p class="date">Febrero 2026</p>
+    </div>
+
+    <!-- Slide 2: Índice -->
+    <div class="slide">
+        <h2>📋 Índice</h2>
+        <ul>
+            <li>Introducción a las Tecnologías Modernas</li>
+            <li>Evolución Histórica</li>
+            <li>Tecnologías Clave de Hoy</li>
+            <li>Inteligencia Artificial y Machine Learning</li>
+            <li>Cloud Computing</li>
+            <li>Internet de las Cosas (IoT)</li>
+            <li>Blockchain y Criptomonedas</li>
+            <li>Impacto en la Sociedad</li>
+            <li>Desafíos y Futuro</li>
+            <li>Conclusiones</li>
+        </ul>
+    </div>
+
+    <!-- Slide 3: Introducción -->
+    <div class="slide">
+        <h2>💡 Introducción</h2>
+        <div class="tech-card">
+            <p>Las <span class="highlight">tecnologías digitales</span> han transformado radicalmente nuestra forma de vivir, trabajar y comunicarnos.</p>
+            <p>En esta presentación exploraremos las tecnologías más relevantes de nuestra era y su impacto en la sociedad moderna.</p>
+            <p>Desde la inteligencia artificial hasta el blockchain, descubriremos cómo estas innovaciones están moldeando nuestro futuro.</p>
+        </div>
+    </div>
+
+    <!-- Slide 4: Evolución Histórica -->
+    <div class="slide">
+        <h2>📚 Evolución Histórica de la Tecnología</h2>
+        <ul>
+            <li><span class="emoji">🖥️</span> <strong>1940s-1950s:</strong> Primeras computadoras (ENIAC, UNIVAC)</li>
+            <li><span class="emoji">💾</span> <strong>1960s-1970s:</strong> Desarrollo de microprocesadores</li>
+            <li><span class="emoji">🌐</span> <strong>1980s-1990s:</strong> Nacimiento de Internet y la World Wide Web</li>
+            <li><span class="emoji">📱</span> <strong>2000s:</strong> Era de los smartphones y redes sociales</li>
+            <li><span class="emoji">🤖</span> <strong>2010s-Presente:</strong> IA, Big Data, Cloud Computing</li>
+        </ul>
+    </div>
+
+    <!-- Slide 5: Tecnologías Clave -->
+    <div class="slide">
+        <h2>🔑 Tecnologías Clave de Hoy</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <h3>🤖</h3>
+                <h3>IA & ML</h3>
+                <p>Inteligencia Artificial y Aprendizaje Automático</p>
+            </div>
+            <div class="grid-item">
+                <h3>☁️</h3>
+                <h3>Cloud</h3>
+                <p>Computación en la Nube</p>
+            </div>
+            <div class="grid-item">
+                <h3>🔗</h3>
+                <h3>IoT</h3>
+                <p>Internet de las Cosas</p>
+            </div>
+            <div class="grid-item">
+                <h3>⛓️</h3>
+                <h3>Blockchain</h3>
+                <p>Tecnología de Cadena de Bloques</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Inteligencia Artificial -->
+    <div class="slide">
+        <h2>🤖 Inteligencia Artificial y Machine Learning</h2>
+        <div class="tech-card">
+            <h3>¿Qué es la IA?</h3>
+            <p>Capacidad de las máquinas para realizar tareas que normalmente requieren inteligencia humana.</p>
+            
+            <h3>Aplicaciones</h3>
+            <ul>
+                <li>Asistentes virtuales (Siri, Alexa, Google Assistant)</li>
+                <li>Reconocimiento facial y de voz</li>
+                <li>Vehículos autónomos</li>
+                <li>Diagnóstico médico</li>
+                <li>Recomendaciones personalizadas</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 7: Cloud Computing -->
+    <div class="slide">
+        <h2>☁️ Cloud Computing</h2>
+        <div class="tech-card">
+            <h3>Definición</h3>
+            <p>Entrega de servicios de computación (servidores, almacenamiento, bases de datos, redes, software) a través de Internet.</p>
+            
+            <h3>Ventajas</h3>
+            <ul>
+                <li><strong>Escalabilidad:</strong> Recursos ajustables según demanda</li>
+                <li><strong>Ahorro de costos:</strong> Pago por uso</li>
+                <li><strong>Accesibilidad:</strong> Acceso desde cualquier lugar</li>
+                <li><strong>Actualizaciones automáticas</strong></li>
+            </ul>
+            
+            <h3>Principales Proveedores</h3>
+            <p>AWS, Microsoft Azure, Google Cloud Platform</p>
+        </div>
+    </div>
+
+    <!-- Slide 8: Internet de las Cosas -->
+    <div class="slide">
+        <h2>🔗 Internet de las Cosas (IoT)</h2>
+        <div class="tech-card">
+            <h3>Concepto</h3>
+            <p>Red de dispositivos físicos conectados a Internet que recopilan e intercambian datos.</p>
+            
+            <h3>Ejemplos en el Hogar</h3>
+            <ul>
+                <li>Termostatos inteligentes</li>
+                <li>Sistemas de seguridad conectados</li>
+                <li>Electrodomésticos inteligentes</li>
+                <li>Asistentes de voz</li>
+            </ul>
+            
+            <h3>Aplicaciones Industriales</h3>
+            <ul>
+                <li>Manufactura inteligente</li>
+                <li>Ciudades inteligentes</li>
+                <li>Agricultura de precisión</li>
+                <li>Salud conectada</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 9: Blockchain -->
+    <div class="slide">
+        <h2>⛓️ Blockchain y Criptomonedas</h2>
+        <div class="tech-card">
+            <h3>¿Qué es Blockchain?</h3>
+            <p>Sistema de registro distribuido y descentralizado que permite transacciones seguras y transparentes.</p>
+            
+            <h3>Características</h3>
+            <ul>
+                <li><strong>Descentralización:</strong> Sin autoridad central</li>
+                <li><strong>Inmutabilidad:</strong> Registros permanentes</li>
+                <li><strong>Transparencia:</strong> Verificable por todos</li>
+                <li><strong>Seguridad:</strong> Criptografía avanzada</li>
+            </ul>
+            
+            <h3>Aplicaciones</h3>
+            <p>Criptomonedas (Bitcoin, Ethereum), contratos inteligentes, trazabilidad de productos, votación electrónica</p>
+        </div>
+    </div>
+
+    <!-- Slide 10: Impacto Social -->
+    <div class="slide">
+        <h2>🌍 Impacto en la Sociedad</h2>
+        <div class="tech-card">
+            <h3>Aspectos Positivos</h3>
+            <ul>
+                <li>Mayor eficiencia y productividad</li>
+                <li>Acceso global a la información</li>
+                <li>Mejora en la calidad de vida</li>
+                <li>Nuevas oportunidades de empleo</li>
+                <li>Innovación en salud y educación</li>
+            </ul>
+            
+            <h3>Desafíos</h3>
+            <ul>
+                <li>Brecha digital</li>
+                <li>Privacidad y seguridad de datos</li>
+                <li>Automatización y pérdida de empleos</li>
+                <li>Dependencia tecnológica</li>
+                <li>Desinformación</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 11: Futuro -->
+    <div class="slide">
+        <h2>🔮 Desafíos y Futuro</h2>
+        <div class="tech-card">
+            <h3>Tendencias Emergentes</h3>
+            <ul>
+                <li><span class="emoji">🧠</span> <strong>IA Generativa:</strong> ChatGPT, DALL-E, creación de contenido</li>
+                <li><span class="emoji">🥽</span> <strong>Realidad Extendida:</strong> VR, AR, Metaverso</li>
+                <li><span class="emoji">⚡</span> <strong>Computación Cuántica:</strong> Procesamiento exponencial</li>
+                <li><span class="emoji">🌱</span> <strong>Tecnología Sostenible:</strong> Energías renovables, eficiencia</li>
+                <li><span class="emoji">🧬</span> <strong>Biotecnología:</strong> Edición genética, medicina personalizada</li>
+            </ul>
+            
+            <h3>Preparándonos para el Futuro</h3>
+            <p>Educación continua, adaptabilidad, pensamiento crítico y uso ético de la tecnología.</p>
+        </div>
+    </div>
+
+    <!-- Slide 12: Conclusiones -->
+    <div class="slide">
+        <h2>✅ Conclusiones</h2>
+        <div class="tech-card">
+            <ul>
+                <li>Las tecnologías digitales están en constante evolución y transformación</li>
+                <li>La <span class="highlight">IA, Cloud, IoT y Blockchain</span> son pilares fundamentales de la era digital</li>
+                <li>El impacto tecnológico es tanto positivo como desafiante</li>
+                <li>Es crucial mantener un equilibrio entre innovación y responsabilidad</li>
+                <li>El futuro pertenece a quienes sepan adaptarse y aprender continuamente</li>
+            </ul>
+            
+            <h3 style="margin-top: 40px;">¡La tecnología es una herramienta poderosa cuando se usa con sabiduría!</h3>
+        </div>
+    </div>
+
+    <!-- Slide 13: Cierre -->
+    <div class="slide">
+        <h1>🙏 ¡Gracias!</h1>
+        <p class="subtitle">¿Preguntas o Comentarios?</p>
+        <div class="footer">
+            <p>Presentación de Tecnologías - 2026</p>
+            <p>hojitosiap-lab</p>
+        </div>
+    </div>
+
+</body>
+</html>
